@@ -1,9 +1,7 @@
-#take a space separated input for a user and orint alternate elements
-
-#n=int(input())
-#for i in range(1,n+1,2):
- #   print(i)
-
-my_list=list(map(int,input().split()))
-for i in range(0,len(my_list),2):
-    print(my_list[i])
+#sum of the digits of string using ascii value
+inp=input()
+sum=0
+for i in inp:
+    if(ord(i)>=48 and ord(i)<=57):
+        sum+=int(i)
+print(sum)
